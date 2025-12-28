@@ -60,7 +60,7 @@ public class SecurityConfig {
     @Bean
     public UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:3000","https://noteshub-kz9p.onrender.com")); // Frontend origin
+        config.setAllowedOrigins(List.of("http://localhost:3000","https://noteshub-kz9p.onrender.com","http://13.203.196.63:8080")); // Frontend origin
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
